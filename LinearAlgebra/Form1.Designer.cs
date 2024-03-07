@@ -56,6 +56,10 @@
             this.labelModuleC = new System.Windows.Forms.Label();
             this.CreateMatrix2 = new System.Windows.Forms.Button();
             this.SubtractionButton = new System.Windows.Forms.Button();
+            this.textBoxVector1 = new System.Windows.Forms.TextBox();
+            this.textBoxVector2 = new System.Windows.Forms.TextBox();
+            this.textBoxSum = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.NumN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumMin)).BeginInit();
@@ -375,12 +379,47 @@
             this.SubtractionButton.UseVisualStyleBackColor = true;
             this.SubtractionButton.Click += new System.EventHandler(this.SubtractionButton_Click);
             // 
+            // textBoxVector1
+            // 
+            this.textBoxVector1.Location = new System.Drawing.Point(23, 324);
+            this.textBoxVector1.Name = "textBoxVector1";
+            this.textBoxVector1.Size = new System.Drawing.Size(100, 20);
+            this.textBoxVector1.TabIndex = 30;
+            // 
+            // textBoxVector2
+            // 
+            this.textBoxVector2.Location = new System.Drawing.Point(23, 363);
+            this.textBoxVector2.Name = "textBoxVector2";
+            this.textBoxVector2.Size = new System.Drawing.Size(100, 20);
+            this.textBoxVector2.TabIndex = 31;
+            // 
+            // textBoxSum
+            // 
+            this.textBoxSum.Location = new System.Drawing.Point(279, 339);
+            this.textBoxSum.Name = "textBoxSum";
+            this.textBoxSum.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSum.TabIndex = 32;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(147, 336);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.buttonCalculate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(1048, 563);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBoxSum);
+            this.Controls.Add(this.textBoxVector2);
+            this.Controls.Add(this.textBoxVector1);
             this.Controls.Add(this.SubtractionButton);
             this.Controls.Add(this.CreateMatrix2);
             this.Controls.Add(this.labelModuleC);
@@ -450,6 +489,10 @@
         private System.Windows.Forms.Label labelModuleC;
         private System.Windows.Forms.Button CreateMatrix2;
         private System.Windows.Forms.Button SubtractionButton;
+        private System.Windows.Forms.TextBox textBoxVector1;
+        private System.Windows.Forms.TextBox textBoxVector2;
+        private System.Windows.Forms.TextBox textBoxSum;
+        private System.Windows.Forms.Button button1;
     }
 }
 
